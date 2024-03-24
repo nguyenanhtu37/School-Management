@@ -1,0 +1,31 @@
+/* Các kiểu dáng sử dụng Bootstrap và CSS tùy chỉnh */
+.summary {
+  margin: 20px;
+}
+
+.table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Tùy chỉnh màu nền header của bảng */
+.thead-dark th {
+  background-color: #343a40;
+  color: #fff;
+}
+
+/* Tùy chỉnh kiểu nút và các biểu tượng */
+.btn-success,
+.btn-danger {
+  margin-right: 5px;
+}
+
+.action-buttons button {
+  padding: 8px 15px;
+  font-size: 14px;
+}
+
+/* Tạo hiệu ứng hover cho dòng trong bảng */
+.table-hover tbody tr:hover {
+  background-color: #f8f9fa;
+}

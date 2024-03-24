@@ -1,0 +1,10 @@
+<div class="col-md-8 offset-md-3" >
+  <h3 class="text-center">Join Class</h3>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+    <label>Enter your student Id:</label>
+    <input type="text" class="form-control" id="studentIdJoin"  [(ngModel)]="studentJoin" name="studentJoin">
+    </div>
+        <button class="btn btn-success" type="submit">Join now</button>
+  </form>
+  </div>

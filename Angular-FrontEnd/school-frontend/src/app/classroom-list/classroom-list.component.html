@@ -1,0 +1,20 @@
+<h2>Classroom list</h2>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Classroom Id</th>
+      <th>Fuctions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor ="let classroom of classrooms">
+        <td>{{classroom.classId}}</td>
+        <td>
+          <button (click) = "viewClass(classroom.classId)" class="btn btn-info"> View</button>
+          <button (click) = "toJoin(classroom.classId)" class="btn btn-success"> Join</button>
+          <button (click) = "out(classroom.classId)" class="btn btn-danger"> Out</button>
+        </td>
+    </tr>
+  </tbody>
+
+</table>

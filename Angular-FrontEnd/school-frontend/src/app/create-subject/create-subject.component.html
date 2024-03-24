@@ -1,0 +1,30 @@
+<!-- create-subject.component.html -->
+<div class="summary">
+  <div class="text-center">
+    <h1 style="text-transform: uppercase">
+      Add new subject
+    </h1>
+  </div>
+  <form #createSubject="ngForm" (ngSubmit)="submitHandler(createSubject.value)" class="col-6 m-auto">
+    <p>
+      <label>Subject Name</label>
+      <input name="subjectname" [(ngModel)]="subjectname" class="form-control" type="text" placeholder="This field is required.">
+    </p>
+    <p>
+      <label>Subject Description</label>
+      <input name="subjectdescription" [(ngModel)]="subjectdescription" class="form-control" type="text" placeholder="This field is required.">
+    </p>
+    <p>
+      <label>Class No.</label>
+      <input name="classroomclassid" [(ngModel)]="classroomclassid" class="form-control" type="text" placeholder="This field is required.">
+    </p>
+    <p>
+      <button class="btn btn-success">Add a new subject</button>
+    </p>
+  </form>
+</div>
+
+<p>Value : {{createSubject.value | json}}</p>
+<p>Subject Name : {{createSubject.value.subjectname}}</p>
+<p>Subject Description : {{createSubject.value.subjectdescription}}</p>
+<p>Class No. : {{createSubject.value.classroomclassid}}</p>
